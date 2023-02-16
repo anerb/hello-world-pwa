@@ -1,4 +1,4 @@
-
+@import url("./currency.js");
 
 function selectItem(item) {
   item.classList.add('selected');

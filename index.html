@@ -13,13 +13,13 @@
 </head>
 <body class="fullscreen">
   <div class="static_header" >
-    <input id="amount" type="number" onchange="ready()" placeholder="0.00" />
+    <span id="amount">0.00</span>
     <datalist id="currency_list">
       <option value="CHF">
       <option value="USD">
       <option value="EUR">
     </datalist>
-    <input type="search" list="currency_list" id="currency" value="CHF" placeholder="ABC">
+    <input type="search" list="currency_list" id="currency" placeholder="CHF">
     <br/>
     <div class="text_label">what:</div><input id="what" type="text" value="" placeholder="description"/>
     <br/>
@@ -33,7 +33,13 @@
       <div class="helper">
         <input class="other_text" type="text" id="destination_text" value="" placeholder="store or destination"/>
       </div>
-    </div>  
+    </div>
+    <div style="font-size: larger;">
+      <div><span>1</span><span>2</span><span>3</span></div>
+      <div><span>4</span><span>5</span><span>6</span></div>
+      <div><span>7</span><span>8</span><span>9</span></div>
+      <div><span>X</span><span>0</span><span>.</span></div>
+    </div>
   </div>
   <div class="static_button">
     <a class="button" onclick="postSend()" id="send-email" href="mailto:anerbenartzi+email2sheet@gmail.com">Send</a>
